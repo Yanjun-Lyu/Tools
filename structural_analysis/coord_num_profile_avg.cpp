@@ -92,7 +92,7 @@ int main(int argc, char* argv[])
         // Calculate number of bins and initialize vectors
         if (!calledBefore)
         {
-          nbins = traj.boxdims.x / binWidth;
+          nbins = traj.boxdims.x / binWidth + 1;
           cout << "# number of bins: " << nbins << endl;
 
           natomsBin.resize(nbins, 0);
@@ -128,7 +128,11 @@ int main(int argc, char* argv[])
         for (size_t i = 0; i < nbins; i++)
         {
           coordNumBin[i] /= natomsBin[i];
-          centerXCoords[i] = traj.bounds[0].x + (i + 0.5) * binWidth; 
+          centerXCoords[i] = traj.bounds[0].x + (i + 0.5) * binWidth;
+					if (i == nbins - 1)
+					{
+					  centerXCoords[i] = (traj.boxdims.x - i * binWidth) * 0.5 + i * binWidth + traj.bounds[0].x;
+					}
           
           coordNumBinAllFrame[i] += coordNumBin[i];
           avgCenterXCoords[i]  += centerXCoords[i]; 
@@ -139,7 +143,7 @@ int main(int argc, char* argv[])
         coordNumProfile << "# center_x_coord  avg_coord_num" << endl; 
         for (size_t i = 0; i < nbins; i++)
         {
-          coordNumProfile << fixed << setprecision(8) << centerXCoords[i] << "  " << coordNumBin[i] << endl;
+          coordNumProfile << fixed << setprecision(4) << centerXCoords[i] << "  " << coordNumBin[i] << endl;
         }
 
         nframes++;
@@ -159,7 +163,7 @@ int main(int argc, char* argv[])
         // Calculate number of bins and initialize vectors
         if (!calledBefore)
         {
-          nbins = traj.boxdims.z / binWidth;
+          nbins = traj.boxdims.z / binWidth + 1;
           cout << "# number of bins: " << nbins << endl;
 
           natomsBin.resize(nbins, 0);
@@ -190,12 +194,16 @@ int main(int argc, char* argv[])
         }
 
         // Calculate average coordination number in each bin
-        // Calculate center X coordinate number of each bin in the frame
+        // Calculate center Z coordinate number of each bin in the frame
         // Populate coordNumBinAllFrame and avgCenterXCoords for all frames
         for (size_t i = 0; i < nbins; i++)
         {
           coordNumBin[i] /= natomsBin[i];
           centerXCoords[i] = traj.bounds[0].z + (i + 0.5) * binWidth; 
+					if (i == nbins - 1)
+					{
+					  centerXCoords[i] = (traj.boxdims.z - i * binWidth) * 0.5 + i * binWidth + traj.bounds[0].z;
+					}
           
           coordNumBinAllFrame[i] += coordNumBin[i];
           avgCenterXCoords[i]  += centerXCoords[i]; 
@@ -206,7 +214,7 @@ int main(int argc, char* argv[])
         coordNumProfile << "# center_z_coord  avg_coord_num" << endl; 
         for (size_t i = 0; i < nbins; i++)
         {
-          coordNumProfile << fixed << setprecision(8) << centerXCoords[i] << "  " << coordNumBin[i] << endl;
+          coordNumProfile << fixed << setprecision(4) << centerXCoords[i] << "  " << coordNumBin[i] << endl;
         }
 
         nframes++;
@@ -228,7 +236,7 @@ int main(int argc, char* argv[])
   coordNumProfileAvg << "# avg_center_coord  avg_coord_num_all_frames" << endl; 
   for (size_t i = 0; i < nbins; i++)
   {
-    coordNumProfileAvg << fixed << setprecision(8) << avgCenterXCoords[i] << "  " << coordNumBinAllFrame[i] << endl;
+    coordNumProfileAvg << fixed << setprecision(4) << avgCenterXCoords[i] << "  " << coordNumBinAllFrame[i] << endl;
   }
 
   cout << endl;

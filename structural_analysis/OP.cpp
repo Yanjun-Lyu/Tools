@@ -49,7 +49,7 @@ int main(int argc, char* argv[])
   vector<double> sp2OPBin;      // total sp2OP of atom in the bin (populated)
 
   //for debugging
-  vector<vector<int>> atomsInBin;  // Which atoms are in each bin
+  //vector<vector<int>> atomsInBin;  // Which atoms are in each bin
 
 
   cout << "# Input parameters:" << endl;
@@ -90,7 +90,7 @@ int main(int argc, char* argv[])
         // Calculate number of bins and initialize vectors
         if (!calledBefore)
         {
-          nbins = traj.boxdims.x / binWidth;
+          nbins = traj.boxdims.x / binWidth + 1;
           cout << "# number of bins: " << nbins << endl;
 
           natomsBin.resize(nbins, 0);
@@ -98,8 +98,8 @@ int main(int argc, char* argv[])
           sp3OPBin.resize(nbins, 0.0);
 
           // for debugging
-          atomsInBin.clear();
-          atomsInBin.resize(nbins);
+          //atomsInBin.clear();
+          //atomsInBin.resize(nbins);
           
           
           calledBefore = true;
@@ -133,7 +133,7 @@ int main(int argc, char* argv[])
           sp3OPBin[binIndex] += traj.sp3OP[i];
           
 
-          cout << "Atom " << i << " is in Bin " << binIndex << endl;
+          //cout << "Atom " << i << " is in Bin " << binIndex << endl;
           // for debugging
           // atomsInBin[binIndex].push_back(i);
           // cout << "BP1" << endl;
@@ -160,9 +160,18 @@ int main(int argc, char* argv[])
         // output order parameters profile into dat file
         OPProfile << "# timestep: " << traj.tstep << endl; 
         OPProfile << "# center_x_coord  avg_sp3OP avg_sp2OP" << endl; 
-        for (size_t i = 0; i < nbins; i++)
+        for (size_t i = 0; i < nbins; i++) 
         {
-          OPProfile << fixed << setprecision(4) << traj.bounds[0].x + (i + 0.5) * binWidth << "  " << sp3OPBin[i] << " " << sp2OPBin[i] << endl;
+					if (i < nbins - 1)
+          {
+					  OPProfile << fixed << setprecision(4) << traj.bounds[0].x + (i + 0.5) * binWidth << "  " << sp3OPBin[i] << " " << sp2OPBin[i] << endl;
+					}
+					
+					else
+					{
+					  OPProfile << fixed << setprecision(4) << (traj.boxdims.x - i * binWidth) * 0.5 + i * binWidth + traj.bounds[0].x << "  " << sp3OPBin[i] << " " << sp2OPBin[i] << endl;
+					}
+					
         }
 
         nframes++;
@@ -182,7 +191,7 @@ int main(int argc, char* argv[])
         // Calculate number of bins and initialize vectors
         if (!calledBefore)
         {
-          nbins = traj.boxdims.z / binWidth;
+          nbins = traj.boxdims.z / binWidth + 1;
           cout << "# number of bins: " << nbins << endl;
 
           natomsBin.resize(nbins,0);
@@ -231,7 +240,17 @@ int main(int argc, char* argv[])
         OPProfile << "# center_z_coord  avg_sp3OP avg_sp3OP" << endl; 
         for (size_t i = 0; i < nbins; i++)
         {
-          OPProfile << fixed << setprecision(4) << traj.bounds[0].z + (i + 0.5) * binWidth << "  " << sp3OPBin[i] << " " << sp2OPBin[i] << endl;
+				
+					if (i < nbins - 1)
+          {
+					  OPProfile << fixed << setprecision(4) << traj.bounds[0].z + (i + 0.5) * binWidth << "  " << sp3OPBin[i] << " " << sp2OPBin[i] << endl;
+					}
+					
+					else
+					{
+					  OPProfile << fixed << setprecision(4) << (traj.boxdims.z - i * binWidth) * 0.5 + i * binWidth + traj.bounds[0].z << "  " << sp3OPBin[i] << " " << sp2OPBin[i] << endl;
+					}
+					
         }
 
         nframes++;

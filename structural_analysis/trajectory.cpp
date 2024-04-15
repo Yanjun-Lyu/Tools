@@ -362,13 +362,13 @@ void Trajectory::get_sp3OP(double del_theta)
         nneighbor = neighlist[i].size();  
         
         //for debugging
-        cout << endl;
-        cout << "Neighbor list of atom " << i << ": ";
-        for (size_t ii = 0; ii < nneighbor; ii++)
-        {
-            cout << neighlist[i][ii] << " ";
-        }
-        cout << endl;
+        //cout << endl;
+        //cout << "Neighbor list of atom " << i << ": ";
+        //for (size_t ii = 0; ii < nneighbor; ii++)
+        //{
+        //    cout << neighlist[i][ii] << " ";
+        //}
+        //cout << endl;
 
 
         // make sure atom i have enough neighbors (3) for following calculations
@@ -413,7 +413,7 @@ void Trajectory::get_sp3OP(double del_theta)
                 angle_ij_ik = get_angle(ij, ik); 
 
                 // for debugging 
-                cout << fixed << setprecision(4) << "angle_" << i << "-" << neighlist[i][j] << "_" << i << "-" << neighlist[i][k] << ": " << angle_ij_ik << endl;
+                //cout << fixed << setprecision(4) << "angle_" << i << "-" << neighlist[i][j] << "_" << i << "-" << neighlist[i][k] << ": " << angle_ij_ik << endl;
 
 
 
@@ -427,7 +427,7 @@ void Trajectory::get_sp3OP(double del_theta)
                     }
 
                     // for debugging
-                    cout << "i j k l: " << i << " " << neighlist[i][j] << " " << neighlist[i][k] << " " << neighlist[i][l] << endl;
+                    //cout << "i j k l: " << i << " " << neighlist[i][j] << " " << neighlist[i][k] << " " << neighlist[i][l] << endl;
 
 
 
@@ -436,7 +436,7 @@ void Trajectory::get_sp3OP(double del_theta)
                     angle_ij_il = get_angle(ij, il); 
 
                     // for debugging
-                    cout << fixed << setprecision(4) << "angle_" << i << "-" << neighlist[i][j] << "_" << i << "-" << neighlist[i][l] << ": " << angle_ij_il << endl;
+                    //cout << fixed << setprecision(4) << "angle_" << i << "-" << neighlist[i][j] << "_" << i << "-" << neighlist[i][l] << ": " << angle_ij_il << endl;
 
 
 
@@ -444,7 +444,7 @@ void Trajectory::get_sp3OP(double del_theta)
                     azimuth_il_ijik = get_azimuth(ij, ik, il);
                     
                     //for debugging
-                    cout << fixed << setprecision(4) << "Azimuth_" << i << neighlist[i][l] << "_" << i << neighlist[i][j] << i << neighlist[i][k] << ": " << azimuth_il_ijik << endl;
+                    //cout << fixed << setprecision(4) << "Azimuth_" << i << neighlist[i][l] << "_" << i << neighlist[i][j] << i << neighlist[i][k] << ": " << azimuth_il_ijik << endl;
 
 
 
@@ -478,7 +478,7 @@ void Trajectory::get_sp3OP(double del_theta)
         sp3OP[i] *= prefactor;
 
         // for debugging
-        cout << "sp3OP of atom " << i << ": " << sp3OP[i] << endl;
+        //cout << "sp3OP of atom " << i << ": " << sp3OP[i] << endl;
     }    
 
 }
@@ -517,13 +517,13 @@ void Trajectory::get_sp2OP(double del_theta)
         nneighbor = neighlist[i].size();  
 
         //for debugging
-        cout << endl;
-        cout << "Neighbor list of atom " << i << ": ";
-        for (size_t ii = 0; ii < nneighbor; ii++)
-        {
-            cout << neighlist[i][ii] << " ";
-        }
-        cout << endl;
+        //cout << endl;
+        //cout << "Neighbor list of atom " << i << ": ";
+        //for (size_t ii = 0; ii < nneighbor; ii++)
+        //{
+        //    cout << neighlist[i][ii] << " ";
+        //}
+        //cout << endl;
 
 
         // make sure atom i have enough neighbors (3) for following calculations
@@ -568,7 +568,7 @@ void Trajectory::get_sp2OP(double del_theta)
                 angle_ij_ik = get_angle(ij, ik); 
 
                 // for debugging 
-                cout << fixed << setprecision(4) << "angle_" << i << "-" << neighlist[i][j] << "_" << i << "-" << neighlist[i][k] << ": " << angle_ij_ik << endl;
+                //cout << fixed << setprecision(4) << "angle_" << i << "-" << neighlist[i][j] << "_" << i << "-" << neighlist[i][k] << ": " << angle_ij_ik << endl;
 
 
 
@@ -582,7 +582,7 @@ void Trajectory::get_sp2OP(double del_theta)
                     }
 
                     // for debugging
-                    cout << "i j k l: " << i << " " << neighlist[i][j] << " " << neighlist[i][k] << " " << neighlist[i][l] << endl;
+                    //cout << "i j k l: " << i << " " << neighlist[i][j] << " " << neighlist[i][k] << " " << neighlist[i][l] << endl;
 
 
 
@@ -591,7 +591,7 @@ void Trajectory::get_sp2OP(double del_theta)
                     angle_ij_il = get_angle(ij, il); 
 
                     // for debugging
-                    cout << fixed << setprecision(4) << "angle_" << i << "-" << neighlist[i][j] << "_" << i << "-" << neighlist[i][l] << ": " << angle_ij_il << endl;
+                    //cout << fixed << setprecision(4) << "angle_" << i << "-" << neighlist[i][j] << "_" << i << "-" << neighlist[i][l] << ": " << angle_ij_il << endl;
 
 
 
@@ -599,7 +599,7 @@ void Trajectory::get_sp2OP(double del_theta)
                     azimuth_il_ijik = get_azimuth(ij, ik, il);
                     
                     //for debugging
-                    cout << fixed << setprecision(4) << "Azimuth_" << i << "-" << neighlist[i][l] << "_" << i << "-" << neighlist[i][j] << "-" << i << "-" << neighlist[i][k] << ": " << azimuth_il_ijik << endl;
+                    //cout << fixed << setprecision(4) << "Azimuth_" << i << "-" << neighlist[i][l] << "_" << i << "-" << neighlist[i][j] << "-" << i << "-" << neighlist[i][k] << ": " << azimuth_il_ijik << endl;
 
 
 
@@ -638,7 +638,7 @@ void Trajectory::get_sp2OP(double del_theta)
         sp2OP[i] *= prefactor;
 
         // for debugging
-        cout << "sp2OP of atom " << i << ": " << sp3OP[i] << endl;
+        //cout << "sp2OP of atom " << i << ": " << sp3OP[i] << endl;
     }    
 
 }
