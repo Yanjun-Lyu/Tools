@@ -1,0 +1,1157 @@
+# Read from trajectory file: graphite_288.lammpstrj
+# Reading timestep: 0
+# Number of atoms: 288
+# Box dimensions: 12.531 9.5891 19.7071
+
+Neighbor list of atom 0: 10 45 244 
+sp3OP of atom: 0: 0.0000
+sp2OP of atom: 0: 0.9350
+
+Neighbor list of atom 1: 2 36 48 
+sp3OP of atom: 1: 0.0000
+sp2OP of atom: 1: 0.9784
+
+Neighbor list of atom 2: 1 11 245 
+sp3OP of atom: 2: 0.0002
+sp2OP of atom: 2: 0.7417
+
+Neighbor list of atom 3: 14 46 248 
+sp3OP of atom: 3: 0.0000
+sp2OP of atom: 3: 0.9035
+
+Neighbor list of atom 4: 5 40 49 
+sp3OP of atom: 4: 0.0000
+sp2OP of atom: 4: 0.9866
+
+Neighbor list of atom 5: 4 15 249 
+sp3OP of atom: 5: 0.0002
+sp2OP of atom: 5: 0.9543
+
+Neighbor list of atom 6: 18 47 252 
+sp3OP of atom: 6: 0.0004
+sp2OP of atom: 6: 0.6831
+
+Neighbor list of atom 7: 8 44 50 
+sp3OP of atom: 7: 0.0000
+sp2OP of atom: 7: 0.9527
+
+Neighbor list of atom 8: 7 19 253 
+sp3OP of atom: 8: 0.0000
+sp2OP of atom: 8: 0.8257
+
+Neighbor list of atom 9: 10 22 256 
+sp3OP of atom: 9: 0.0000
+sp2OP of atom: 9: 0.8388
+
+Neighbor list of atom 10: 0 9 51 
+sp3OP of atom: 10: 0.0051
+sp2OP of atom: 10: 0.8724
+
+Neighbor list of atom 11: 2 12 54 
+sp3OP of atom: 11: 0.0000
+sp2OP of atom: 11: 0.7811
+
+Neighbor list of atom 12: 11 23 257 
+sp3OP of atom: 12: 0.0006
+sp2OP of atom: 12: 0.9206
+
+Neighbor list of atom 13: 14 26 260 
+sp3OP of atom: 13: 0.0002
+sp2OP of atom: 13: 0.7644
+
+Neighbor list of atom 14: 3 13 55 
+sp3OP of atom: 14: 0.0000
+sp2OP of atom: 14: 0.7988
+
+Neighbor list of atom 15: 5 16 58 
+sp3OP of atom: 15: 0.0000
+sp2OP of atom: 15: 0.9240
+
+Neighbor list of atom 16: 15 27 261 
+sp3OP of atom: 16: 0.0000
+sp2OP of atom: 16: 0.5567
+
+Neighbor list of atom 17: 18 30 264 
+sp3OP of atom: 17: 0.0000
+sp2OP of atom: 17: 0.6940
+
+Neighbor list of atom 18: 6 17 59 
+sp3OP of atom: 18: 0.0009
+sp2OP of atom: 18: 0.4902
+
+Neighbor list of atom 19: 8 20 62 
+sp3OP of atom: 19: 0.0001
+sp2OP of atom: 19: 0.8378
+
+Neighbor list of atom 20: 19 31 265 
+sp3OP of atom: 20: 0.0000
+sp2OP of atom: 20: 0.9161
+
+Neighbor list of atom 21: 22 34 268 
+sp3OP of atom: 21: 0.0000
+sp2OP of atom: 21: 0.9041
+
+Neighbor list of atom 22: 9 21 63 
+sp3OP of atom: 22: 0.0002
+sp2OP of atom: 22: 0.8942
+
+Neighbor list of atom 23: 12 24 66 
+sp3OP of atom: 23: 0.0006
+sp2OP of atom: 23: 0.8990
+
+Neighbor list of atom 24: 23 35 269 
+sp3OP of atom: 24: 0.0002
+sp2OP of atom: 24: 0.8224
+
+Neighbor list of atom 25: 26 38 272 
+sp3OP of atom: 25: 0.0001
+sp2OP of atom: 25: 0.8534
+
+Neighbor list of atom 26: 13 25 67 
+sp3OP of atom: 26: 0.0002
+sp2OP of atom: 26: 0.9559
+
+Neighbor list of atom 27: 16 28 70 
+sp3OP of atom: 27: 0.0001
+sp2OP of atom: 27: 0.8480
+
+Neighbor list of atom 28: 27 39 273 
+sp3OP of atom: 28: 0.0000
+sp2OP of atom: 28: 0.6946
+
+Neighbor list of atom 29: 30 42 276 
+sp3OP of atom: 29: 0.0012
+sp2OP of atom: 29: 0.9531
+
+Neighbor list of atom 30: 17 29 71 
+sp3OP of atom: 30: 0.0000
+sp2OP of atom: 30: 0.9228
+
+Neighbor list of atom 31: 20 32 74 
+sp3OP of atom: 31: 0.0000
+sp2OP of atom: 31: 0.9018
+
+Neighbor list of atom 32: 31 43 277 
+sp3OP of atom: 32: 0.0003
+sp2OP of atom: 32: 0.9057
+
+Neighbor list of atom 33: 34 45 280 
+sp3OP of atom: 33: 0.0003
+sp2OP of atom: 33: 0.9255
+
+Neighbor list of atom 34: 21 33 75 
+sp3OP of atom: 34: 0.0001
+sp2OP of atom: 34: 0.9073
+
+Neighbor list of atom 35: 24 36 78 
+sp3OP of atom: 35: 0.0002
+sp2OP of atom: 35: 0.9481
+
+Neighbor list of atom 36: 1 35 281 
+sp3OP of atom: 36: 0.0000
+sp2OP of atom: 36: 0.8979
+
+Neighbor list of atom 37: 38 46 283 
+sp3OP of atom: 37: 0.0001
+sp2OP of atom: 37: 0.9406
+
+Neighbor list of atom 38: 25 37 79 
+sp3OP of atom: 38: 0.0000
+sp2OP of atom: 38: 0.9613
+
+Neighbor list of atom 39: 28 40 82 
+sp3OP of atom: 39: 0.0001
+sp2OP of atom: 39: 0.9858
+
+Neighbor list of atom 40: 4 39 284 
+sp3OP of atom: 40: 0.0000
+sp2OP of atom: 40: 0.8094
+
+Neighbor list of atom 41: 42 47 286 
+sp3OP of atom: 41: 0.0001
+sp2OP of atom: 41: 0.7372
+
+Neighbor list of atom 42: 29 41 83 
+sp3OP of atom: 42: 0.0001
+sp2OP of atom: 42: 0.7257
+
+Neighbor list of atom 43: 32 44 86 
+sp3OP of atom: 43: 0.0003
+sp2OP of atom: 43: 0.9185
+
+Neighbor list of atom 44: 7 43 287 
+sp3OP of atom: 44: 0.0002
+sp2OP of atom: 44: 0.9661
+
+Neighbor list of atom 45: 0 33 87 
+sp3OP of atom: 45: 0.0008
+sp2OP of atom: 45: 0.9848
+
+Neighbor list of atom 46: 3 37 90 
+sp3OP of atom: 46: 0.0000
+sp2OP of atom: 46: 0.8279
+
+Neighbor list of atom 47: 6 41 93 
+sp3OP of atom: 47: 0.0009
+sp2OP of atom: 47: 0.6604
+
+Neighbor list of atom 48: 1 53 89 
+sp3OP of atom: 48: 0.0002
+sp2OP of atom: 48: 0.9692
+
+Neighbor list of atom 49: 4 57 92 
+sp3OP of atom: 49: 0.0001
+sp2OP of atom: 49: 0.8832
+
+Neighbor list of atom 50: 7 61 95 
+sp3OP of atom: 50: 0.0001
+sp2OP of atom: 50: 0.9711
+
+Neighbor list of atom 51: 10 52 64 
+sp3OP of atom: 51: 0.0001
+sp2OP of atom: 51: 0.9267
+
+Neighbor list of atom 52: 51 87 96 
+sp3OP of atom: 52: 0.0000
+sp2OP of atom: 52: 0.9455
+
+Neighbor list of atom 53: 48 54 98 
+sp3OP of atom: 53: 0.0001
+sp2OP of atom: 53: 0.9486
+
+Neighbor list of atom 54: 11 53 65 
+sp3OP of atom: 54: 0.0002
+sp2OP of atom: 54: 0.9281
+
+Neighbor list of atom 55: 14 56 68 
+sp3OP of atom: 55: 0.0001
+sp2OP of atom: 55: 0.9338
+
+Neighbor list of atom 56: 55 90 99 
+sp3OP of atom: 56: 0.0002
+sp2OP of atom: 56: 0.9173
+
+Neighbor list of atom 57: 49 58 101 
+sp3OP of atom: 57: 0.0002
+sp2OP of atom: 57: 0.9478
+
+Neighbor list of atom 58: 15 57 69 
+sp3OP of atom: 58: 0.0003
+sp2OP of atom: 58: 0.7963
+
+Neighbor list of atom 59: 18 60 72 
+sp3OP of atom: 59: 0.0000
+sp2OP of atom: 59: 0.7110
+
+Neighbor list of atom 60: 59 93 102 
+sp3OP of atom: 60: 0.0000
+sp2OP of atom: 60: 0.9440
+
+Neighbor list of atom 61: 50 62 104 
+sp3OP of atom: 61: 0.0001
+sp2OP of atom: 61: 0.9949
+
+Neighbor list of atom 62: 19 61 73 
+sp3OP of atom: 62: 0.0003
+sp2OP of atom: 62: 0.9247
+
+Neighbor list of atom 63: 22 64 76 
+sp3OP of atom: 63: 0.0005
+sp2OP of atom: 63: 0.9842
+
+Neighbor list of atom 64: 51 63 105 
+sp3OP of atom: 64: 0.0003
+sp2OP of atom: 64: 0.8690
+
+Neighbor list of atom 65: 54 66 108 
+sp3OP of atom: 65: 0.0001
+sp2OP of atom: 65: 0.9434
+
+Neighbor list of atom 66: 23 65 77 
+sp3OP of atom: 66: 0.0000
+sp2OP of atom: 66: 0.8549
+
+Neighbor list of atom 67: 26 68 80 
+sp3OP of atom: 67: 0.0006
+sp2OP of atom: 67: 0.8993
+
+Neighbor list of atom 68: 55 67 109 
+sp3OP of atom: 68: 0.0000
+sp2OP of atom: 68: 0.9031
+
+Neighbor list of atom 69: 58 70 112 
+sp3OP of atom: 69: 0.0000
+sp2OP of atom: 69: 0.6689
+
+Neighbor list of atom 70: 27 69 81 
+sp3OP of atom: 70: 0.0001
+sp2OP of atom: 70: 0.6690
+
+Neighbor list of atom 71: 30 72 84 
+sp3OP of atom: 71: 0.0001
+sp2OP of atom: 71: 0.9749
+
+Neighbor list of atom 72: 59 71 113 
+sp3OP of atom: 72: 0.0000
+sp2OP of atom: 72: 0.7400
+
+Neighbor list of atom 73: 62 74 116 
+sp3OP of atom: 73: 0.0007
+sp2OP of atom: 73: 0.8484
+
+Neighbor list of atom 74: 31 73 85 
+sp3OP of atom: 74: 0.0000
+sp2OP of atom: 74: 0.8710
+
+Neighbor list of atom 75: 34 76 88 
+sp3OP of atom: 75: 0.0001
+sp2OP of atom: 75: 0.9694
+
+Neighbor list of atom 76: 63 75 117 
+sp3OP of atom: 76: 0.0000
+sp2OP of atom: 76: 0.9701
+
+Neighbor list of atom 77: 66 78 120 
+sp3OP of atom: 77: 0.0001
+sp2OP of atom: 77: 0.9491
+
+Neighbor list of atom 78: 35 77 89 
+sp3OP of atom: 78: 0.0003
+sp2OP of atom: 78: 0.8638
+
+Neighbor list of atom 79: 38 80 91 
+sp3OP of atom: 79: 0.0002
+sp2OP of atom: 79: 0.8518
+
+Neighbor list of atom 80: 67 79 121 
+sp3OP of atom: 80: 0.0003
+sp2OP of atom: 80: 0.8743
+
+Neighbor list of atom 81: 70 82 124 
+sp3OP of atom: 81: 0.0014
+sp2OP of atom: 81: 0.6270
+
+Neighbor list of atom 82: 39 81 92 
+sp3OP of atom: 82: 0.0002
+sp2OP of atom: 82: 0.9305
+
+Neighbor list of atom 83: 42 84 94 
+sp3OP of atom: 83: 0.0012
+sp2OP of atom: 83: 0.5530
+
+Neighbor list of atom 84: 71 83 125 
+sp3OP of atom: 84: 0.0002
+sp2OP of atom: 84: 0.7606
+
+Neighbor list of atom 85: 74 86 128 
+sp3OP of atom: 85: 0.0000
+sp2OP of atom: 85: 0.9180
+
+Neighbor list of atom 86: 43 85 95 
+sp3OP of atom: 86: 0.0002
+sp2OP of atom: 86: 0.9507
+
+Neighbor list of atom 87: 45 52 88 
+sp3OP of atom: 87: 0.0000
+sp2OP of atom: 87: 0.9038
+
+Neighbor list of atom 88: 75 87 129 
+sp3OP of atom: 88: 0.0008
+sp2OP of atom: 88: 0.8474
+
+Neighbor list of atom 89: 48 78 132 
+sp3OP of atom: 89: 0.0000
+sp2OP of atom: 89: 0.7259
+
+Neighbor list of atom 90: 46 56 91 
+sp3OP of atom: 90: 0.0001
+sp2OP of atom: 90: 0.9041
+
+Neighbor list of atom 91: 79 90 133 
+sp3OP of atom: 91: 0.0001
+sp2OP of atom: 91: 0.9031
+
+Neighbor list of atom 92: 49 82 136 
+sp3OP of atom: 92: 0.0015
+sp2OP of atom: 92: 0.9857
+
+Neighbor list of atom 93: 47 60 94 
+sp3OP of atom: 93: 0.0000
+sp2OP of atom: 93: 0.9422
+
+Neighbor list of atom 94: 83 93 137 
+sp3OP of atom: 94: 0.0001
+sp2OP of atom: 94: 0.8041
+
+Neighbor list of atom 95: 50 86 140 
+sp3OP of atom: 95: 0.0000
+sp2OP of atom: 95: 0.6355
+
+Neighbor list of atom 96: 52 106 141 
+sp3OP of atom: 96: 0.0001
+sp2OP of atom: 96: 0.9893
+
+Neighbor list of atom 97: 98 132 144 
+sp3OP of atom: 97: 0.0003
+sp2OP of atom: 97: 0.9455
+
+Neighbor list of atom 98: 53 97 107 
+sp3OP of atom: 98: 0.0000
+sp2OP of atom: 98: 0.7518
+
+Neighbor list of atom 99: 56 110 142 
+sp3OP of atom: 99: 0.0002
+sp2OP of atom: 99: 0.9517
+
+Neighbor list of atom 100: 101 136 145 
+sp3OP of atom: 100: 0.0002
+sp2OP of atom: 100: 0.9247
+
+Neighbor list of atom 101: 57 100 111 
+sp3OP of atom: 101: 0.0001
+sp2OP of atom: 101: 0.9739
+
+Neighbor list of atom 102: 60 114 143 
+sp3OP of atom: 102: 0.0000
+sp2OP of atom: 102: 0.8635
+
+Neighbor list of atom 103: 104 140 146 
+sp3OP of atom: 103: 0.0000
+sp2OP of atom: 103: 0.8708
+
+Neighbor list of atom 104: 61 103 115 
+sp3OP of atom: 104: 0.0002
+sp2OP of atom: 104: 0.9788
+
+Neighbor list of atom 105: 64 106 118 
+sp3OP of atom: 105: 0.0001
+sp2OP of atom: 105: 0.9994
+
+Neighbor list of atom 106: 96 105 147 
+sp3OP of atom: 106: 0.0000
+sp2OP of atom: 106: 0.8609
+
+Neighbor list of atom 107: 98 108 150 
+sp3OP of atom: 107: 0.0004
+sp2OP of atom: 107: 0.4376
+
+Neighbor list of atom 108: 65 107 119 
+sp3OP of atom: 108: 0.0000
+sp2OP of atom: 108: 0.9400
+
+Neighbor list of atom 109: 68 110 122 
+sp3OP of atom: 109: 0.0009
+sp2OP of atom: 109: 0.9564
+
+Neighbor list of atom 110: 99 109 151 
+sp3OP of atom: 110: 0.0001
+sp2OP of atom: 110: 0.9273
+
+Neighbor list of atom 111: 101 112 154 
+sp3OP of atom: 111: 0.0010
+sp2OP of atom: 111: 0.8952
+
+Neighbor list of atom 112: 69 111 123 
+sp3OP of atom: 112: 0.0004
+sp2OP of atom: 112: 0.9604
+
+Neighbor list of atom 113: 72 114 126 
+sp3OP of atom: 113: 0.0000
+sp2OP of atom: 113: 0.8260
+
+Neighbor list of atom 114: 102 113 155 
+sp3OP of atom: 114: 0.0002
+sp2OP of atom: 114: 0.9444
+
+Neighbor list of atom 115: 104 116 158 
+sp3OP of atom: 115: 0.0001
+sp2OP of atom: 115: 0.8138
+
+Neighbor list of atom 116: 73 115 127 
+sp3OP of atom: 116: 0.0000
+sp2OP of atom: 116: 0.7283
+
+Neighbor list of atom 117: 76 118 130 
+sp3OP of atom: 117: 0.0014
+sp2OP of atom: 117: 0.8725
+
+Neighbor list of atom 118: 105 117 159 
+sp3OP of atom: 118: 0.0000
+sp2OP of atom: 118: 0.7715
+
+Neighbor list of atom 119: 108 120 162 
+sp3OP of atom: 119: 0.0000
+sp2OP of atom: 119: 0.9982
+
+Neighbor list of atom 120: 77 119 131 
+sp3OP of atom: 120: 0.0000
+sp2OP of atom: 120: 0.9339
+
+Neighbor list of atom 121: 80 122 134 
+sp3OP of atom: 121: 0.0000
+sp2OP of atom: 121: 0.9250
+
+Neighbor list of atom 122: 109 121 163 
+sp3OP of atom: 122: 0.0006
+sp2OP of atom: 122: 0.9590
+
+Neighbor list of atom 123: 112 124 166 
+sp3OP of atom: 123: 0.0000
+sp2OP of atom: 123: 0.9900
+
+Neighbor list of atom 124: 81 123 135 
+sp3OP of atom: 124: 0.0002
+sp2OP of atom: 124: 0.9186
+
+Neighbor list of atom 125: 84 126 138 
+sp3OP of atom: 125: 0.0001
+sp2OP of atom: 125: 0.7140
+
+Neighbor list of atom 126: 113 125 167 
+sp3OP of atom: 126: 0.0000
+sp2OP of atom: 126: 0.7795
+
+Neighbor list of atom 127: 116 128 170 
+sp3OP of atom: 127: 0.0000
+sp2OP of atom: 127: 0.9764
+
+Neighbor list of atom 128: 85 127 139 
+sp3OP of atom: 128: 0.0006
+sp2OP of atom: 128: 0.9860
+
+Neighbor list of atom 129: 88 130 141 
+sp3OP of atom: 129: 0.0001
+sp2OP of atom: 129: 0.9356
+
+Neighbor list of atom 130: 117 129 171 
+sp3OP of atom: 130: 0.0000
+sp2OP of atom: 130: 0.9411
+
+Neighbor list of atom 131: 120 132 174 
+sp3OP of atom: 131: 0.0000
+sp2OP of atom: 131: 0.8169
+
+Neighbor list of atom 132: 89 97 131 
+sp3OP of atom: 132: 0.0000
+sp2OP of atom: 132: 0.7924
+
+Neighbor list of atom 133: 91 134 142 
+sp3OP of atom: 133: 0.0000
+sp2OP of atom: 133: 0.8730
+
+Neighbor list of atom 134: 121 133 175 
+sp3OP of atom: 134: 0.0006
+sp2OP of atom: 134: 0.9231
+
+Neighbor list of atom 135: 124 136 178 
+sp3OP of atom: 135: 0.0002
+sp2OP of atom: 135: 0.7856
+
+Neighbor list of atom 136: 92 100 135 
+sp3OP of atom: 136: 0.0000
+sp2OP of atom: 136: 0.9235
+
+Neighbor list of atom 137: 94 138 143 
+sp3OP of atom: 137: 0.0000
+sp2OP of atom: 137: 0.8648
+
+Neighbor list of atom 138: 125 137 179 
+sp3OP of atom: 138: 0.0006
+sp2OP of atom: 138: 0.7447
+
+Neighbor list of atom 139: 128 140 182 
+sp3OP of atom: 139: 0.0000
+sp2OP of atom: 139: 0.8974
+
+Neighbor list of atom 140: 95 103 139 
+sp3OP of atom: 140: 0.0004
+sp2OP of atom: 140: 0.7240
+
+Neighbor list of atom 141: 96 129 183 
+sp3OP of atom: 141: 0.0001
+sp2OP of atom: 141: 0.9042
+
+Neighbor list of atom 142: 99 133 186 
+sp3OP of atom: 142: 0.0001
+sp2OP of atom: 142: 0.9785
+
+Neighbor list of atom 143: 102 137 189 
+sp3OP of atom: 143: 0.0002
+sp2OP of atom: 143: 0.8635
+
+Neighbor list of atom 144: 97 149 185 
+sp3OP of atom: 144: 0.0003
+sp2OP of atom: 144: 0.7547
+
+Neighbor list of atom 145: 100 153 188 
+sp3OP of atom: 145: 0.0002
+sp2OP of atom: 145: 0.8176
+
+Neighbor list of atom 146: 103 157 191 
+sp3OP of atom: 146: 0.0011
+sp2OP of atom: 146: 0.8483
+
+Neighbor list of atom 147: 106 148 160 
+sp3OP of atom: 147: 0.0009
+sp2OP of atom: 147: 0.7275
+
+Neighbor list of atom 148: 147 183 192 
+sp3OP of atom: 148: 0.0001
+sp2OP of atom: 148: 0.9635
+
+Neighbor list of atom 149: 144 150 194 
+sp3OP of atom: 149: 0.0003
+sp2OP of atom: 149: 0.8620
+
+Neighbor list of atom 150: 107 149 161 
+sp3OP of atom: 150: 0.0000
+sp2OP of atom: 150: 0.6140
+
+Neighbor list of atom 151: 110 152 164 
+sp3OP of atom: 151: 0.0003
+sp2OP of atom: 151: 0.7964
+
+Neighbor list of atom 152: 151 186 195 
+sp3OP of atom: 152: 0.0000
+sp2OP of atom: 152: 0.7834
+
+Neighbor list of atom 153: 145 154 197 
+sp3OP of atom: 153: 0.0004
+sp2OP of atom: 153: 0.9553
+
+Neighbor list of atom 154: 111 153 165 
+sp3OP of atom: 154: 0.0000
+sp2OP of atom: 154: 0.8463
+
+Neighbor list of atom 155: 114 156 168 
+sp3OP of atom: 155: 0.0010
+sp2OP of atom: 155: 0.9557
+
+Neighbor list of atom 156: 155 189 198 
+sp3OP of atom: 156: 0.0002
+sp2OP of atom: 156: 0.9380
+
+Neighbor list of atom 157: 146 158 200 
+sp3OP of atom: 157: 0.0000
+sp2OP of atom: 157: 0.8425
+
+Neighbor list of atom 158: 115 157 169 
+sp3OP of atom: 158: 0.0000
+sp2OP of atom: 158: 0.8454
+
+Neighbor list of atom 159: 118 160 172 
+sp3OP of atom: 159: 0.0002
+sp2OP of atom: 159: 0.8059
+
+Neighbor list of atom 160: 147 159 201 
+sp3OP of atom: 160: 0.0000
+sp2OP of atom: 160: 0.5331
+
+Neighbor list of atom 161: 150 162 204 
+sp3OP of atom: 161: 0.0000
+sp2OP of atom: 161: 0.8611
+
+Neighbor list of atom 162: 119 161 173 
+sp3OP of atom: 162: 0.0001
+sp2OP of atom: 162: 0.9471
+
+Neighbor list of atom 163: 122 164 176 
+sp3OP of atom: 163: 0.0000
+sp2OP of atom: 163: 0.9198
+
+Neighbor list of atom 164: 151 163 205 
+sp3OP of atom: 164: 0.0004
+sp2OP of atom: 164: 0.9448
+
+Neighbor list of atom 165: 154 166 208 
+sp3OP of atom: 165: 0.0001
+sp2OP of atom: 165: 0.9577
+
+Neighbor list of atom 166: 123 165 177 
+sp3OP of atom: 166: 0.0001
+sp2OP of atom: 166: 0.9607
+
+Neighbor list of atom 167: 126 168 180 
+sp3OP of atom: 167: 0.0002
+sp2OP of atom: 167: 0.8959
+
+Neighbor list of atom 168: 155 167 209 
+sp3OP of atom: 168: 0.0001
+sp2OP of atom: 168: 0.9744
+
+Neighbor list of atom 169: 158 170 212 
+sp3OP of atom: 169: 0.0001
+sp2OP of atom: 169: 0.9622
+
+Neighbor list of atom 170: 127 169 181 
+sp3OP of atom: 170: 0.0001
+sp2OP of atom: 170: 0.9507
+
+Neighbor list of atom 171: 130 172 184 
+sp3OP of atom: 171: 0.0001
+sp2OP of atom: 171: 0.9945
+
+Neighbor list of atom 172: 159 171 213 
+sp3OP of atom: 172: 0.0001
+sp2OP of atom: 172: 0.9902
+
+Neighbor list of atom 173: 162 174 216 
+sp3OP of atom: 173: 0.0002
+sp2OP of atom: 173: 0.9943
+
+Neighbor list of atom 174: 131 173 185 
+sp3OP of atom: 174: 0.0002
+sp2OP of atom: 174: 0.9463
+
+Neighbor list of atom 175: 134 176 187 
+sp3OP of atom: 175: 0.0001
+sp2OP of atom: 175: 0.9712
+
+Neighbor list of atom 176: 163 175 217 
+sp3OP of atom: 176: 0.0000
+sp2OP of atom: 176: 0.9384
+
+Neighbor list of atom 177: 166 178 220 
+sp3OP of atom: 177: 0.0000
+sp2OP of atom: 177: 0.9949
+
+Neighbor list of atom 178: 135 177 188 
+sp3OP of atom: 178: 0.0010
+sp2OP of atom: 178: 0.9261
+
+Neighbor list of atom 179: 138 180 190 
+sp3OP of atom: 179: 0.0001
+sp2OP of atom: 179: 0.9728
+
+Neighbor list of atom 180: 167 179 221 
+sp3OP of atom: 180: 0.0000
+sp2OP of atom: 180: 0.9927
+
+Neighbor list of atom 181: 170 182 224 
+sp3OP of atom: 181: 0.0009
+sp2OP of atom: 181: 0.9676
+
+Neighbor list of atom 182: 139 181 191 
+sp3OP of atom: 182: 0.0000
+sp2OP of atom: 182: 0.8253
+
+Neighbor list of atom 183: 141 148 184 
+sp3OP of atom: 183: 0.0004
+sp2OP of atom: 183: 0.9219
+
+Neighbor list of atom 184: 171 183 225 
+sp3OP of atom: 184: 0.0000
+sp2OP of atom: 184: 0.9408
+
+Neighbor list of atom 185: 144 174 228 
+sp3OP of atom: 185: 0.0003
+sp2OP of atom: 185: 0.8417
+
+Neighbor list of atom 186: 142 152 187 
+sp3OP of atom: 186: 0.0000
+sp2OP of atom: 186: 0.9981
+
+Neighbor list of atom 187: 175 186 229 
+sp3OP of atom: 187: 0.0004
+sp2OP of atom: 187: 0.9481
+
+Neighbor list of atom 188: 145 178 232 
+sp3OP of atom: 188: 0.0010
+sp2OP of atom: 188: 0.8489
+
+Neighbor list of atom 189: 143 156 190 
+sp3OP of atom: 189: 0.0001
+sp2OP of atom: 189: 0.9948
+
+Neighbor list of atom 190: 179 189 233 
+sp3OP of atom: 190: 0.0001
+sp2OP of atom: 190: 0.9599
+
+Neighbor list of atom 191: 146 182 236 
+sp3OP of atom: 191: 0.0011
+sp2OP of atom: 191: 0.8901
+
+Neighbor list of atom 192: 148 202 237 
+sp3OP of atom: 192: 0.0000
+sp2OP of atom: 192: 0.8249
+
+Neighbor list of atom 193: 194 228 240 
+sp3OP of atom: 193: 0.0002
+sp2OP of atom: 193: 0.9011
+
+Neighbor list of atom 194: 149 193 203 
+sp3OP of atom: 194: 0.0005
+sp2OP of atom: 194: 0.8257
+
+Neighbor list of atom 195: 152 206 238 
+sp3OP of atom: 195: 0.0000
+sp2OP of atom: 195: 0.8364
+
+Neighbor list of atom 196: 197 232 241 
+sp3OP of atom: 196: 0.0005
+sp2OP of atom: 196: 0.9842
+
+Neighbor list of atom 197: 153 196 207 
+sp3OP of atom: 197: 0.0001
+sp2OP of atom: 197: 0.8868
+
+Neighbor list of atom 198: 156 210 239 
+sp3OP of atom: 198: 0.0002
+sp2OP of atom: 198: 0.8763
+
+Neighbor list of atom 199: 200 236 242 
+sp3OP of atom: 199: 0.0000
+sp2OP of atom: 199: 0.7378
+
+Neighbor list of atom 200: 157 199 211 
+sp3OP of atom: 200: 0.0000
+sp2OP of atom: 200: 0.9608
+
+Neighbor list of atom 201: 160 202 214 
+sp3OP of atom: 201: 0.0015
+sp2OP of atom: 201: 0.6561
+
+Neighbor list of atom 202: 192 201 243 
+sp3OP of atom: 202: 0.0010
+sp2OP of atom: 202: 0.9928
+
+Neighbor list of atom 203: 194 204 246 
+sp3OP of atom: 203: 0.0031
+sp2OP of atom: 203: 0.4900
+
+Neighbor list of atom 204: 161 203 215 
+sp3OP of atom: 204: 0.0000
+sp2OP of atom: 204: 0.9392
+
+Neighbor list of atom 205: 164 206 218 
+sp3OP of atom: 205: 0.0000
+sp2OP of atom: 205: 0.9719
+
+Neighbor list of atom 206: 195 205 247 
+sp3OP of atom: 206: 0.0003
+sp2OP of atom: 206: 0.8485
+
+Neighbor list of atom 207: 197 208 250 
+sp3OP of atom: 207: 0.0001
+sp2OP of atom: 207: 0.9486
+
+Neighbor list of atom 208: 165 207 219 
+sp3OP of atom: 208: 0.0015
+sp2OP of atom: 208: 0.9633
+
+Neighbor list of atom 209: 168 210 222 
+sp3OP of atom: 209: 0.0000
+sp2OP of atom: 209: 0.9250
+
+Neighbor list of atom 210: 198 209 251 
+sp3OP of atom: 210: 0.0005
+sp2OP of atom: 210: 0.9908
+
+Neighbor list of atom 211: 200 212 254 
+sp3OP of atom: 211: 0.0001
+sp2OP of atom: 211: 0.8715
+
+Neighbor list of atom 212: 169 211 223 
+sp3OP of atom: 212: 0.0000
+sp2OP of atom: 212: 0.8680
+
+Neighbor list of atom 213: 172 214 226 
+sp3OP of atom: 213: 0.0003
+sp2OP of atom: 213: 0.9414
+
+Neighbor list of atom 214: 201 213 255 
+sp3OP of atom: 214: 0.0010
+sp2OP of atom: 214: 0.7377
+
+Neighbor list of atom 215: 204 216 258 
+sp3OP of atom: 215: 0.0001
+sp2OP of atom: 215: 0.8696
+
+Neighbor list of atom 216: 173 215 227 
+sp3OP of atom: 216: 0.0000
+sp2OP of atom: 216: 0.8570
+
+Neighbor list of atom 217: 176 218 230 
+sp3OP of atom: 217: 0.0006
+sp2OP of atom: 217: 0.9615
+
+Neighbor list of atom 218: 205 217 259 
+sp3OP of atom: 218: 0.0000
+sp2OP of atom: 218: 0.9868
+
+Neighbor list of atom 219: 208 220 262 
+sp3OP of atom: 219: 0.0000
+sp2OP of atom: 219: 0.9326
+
+Neighbor list of atom 220: 177 219 231 
+sp3OP of atom: 220: 0.0000
+sp2OP of atom: 220: 0.9487
+
+Neighbor list of atom 221: 180 222 234 
+sp3OP of atom: 221: 0.0000
+sp2OP of atom: 221: 0.9788
+
+Neighbor list of atom 222: 209 221 263 
+sp3OP of atom: 222: 0.0001
+sp2OP of atom: 222: 0.8499
+
+Neighbor list of atom 223: 212 224 266 
+sp3OP of atom: 223: 0.0001
+sp2OP of atom: 223: 0.6645
+
+Neighbor list of atom 224: 181 223 235 
+sp3OP of atom: 224: 0.0001
+sp2OP of atom: 224: 0.9059
+
+Neighbor list of atom 225: 184 226 237 
+sp3OP of atom: 225: 0.0005
+sp2OP of atom: 225: 0.9535
+
+Neighbor list of atom 226: 213 225 267 
+sp3OP of atom: 226: 0.0000
+sp2OP of atom: 226: 0.9145
+
+Neighbor list of atom 227: 216 228 270 
+sp3OP of atom: 227: 0.0002
+sp2OP of atom: 227: 0.9665
+
+Neighbor list of atom 228: 185 193 227 
+sp3OP of atom: 228: 0.0000
+sp2OP of atom: 228: 0.9838
+
+Neighbor list of atom 229: 187 230 238 
+sp3OP of atom: 229: 0.0000
+sp2OP of atom: 229: 0.7738
+
+Neighbor list of atom 230: 217 229 271 
+sp3OP of atom: 230: 0.0000
+sp2OP of atom: 230: 0.9991
+
+Neighbor list of atom 231: 220 232 274 
+sp3OP of atom: 231: 0.0005
+sp2OP of atom: 231: 0.9329
+
+Neighbor list of atom 232: 188 196 231 
+sp3OP of atom: 232: 0.0003
+sp2OP of atom: 232: 0.9227
+
+Neighbor list of atom 233: 190 234 239 
+sp3OP of atom: 233: 0.0001
+sp2OP of atom: 233: 0.8621
+
+Neighbor list of atom 234: 221 233 275 
+sp3OP of atom: 234: 0.0005
+sp2OP of atom: 234: 0.9778
+
+Neighbor list of atom 235: 224 236 278 
+sp3OP of atom: 235: 0.0000
+sp2OP of atom: 235: 0.9378
+
+Neighbor list of atom 236: 191 199 235 
+sp3OP of atom: 236: 0.0000
+sp2OP of atom: 236: 0.9373
+
+Neighbor list of atom 237: 192 225 279 
+sp3OP of atom: 237: 0.0000
+sp2OP of atom: 237: 0.9414
+
+Neighbor list of atom 238: 195 229 282 
+sp3OP of atom: 238: 0.0008
+sp2OP of atom: 238: 0.5797
+
+Neighbor list of atom 239: 198 233 285 
+sp3OP of atom: 239: 0.0002
+sp2OP of atom: 239: 0.8610
+
+Neighbor list of atom 240: 193 245 281 
+sp3OP of atom: 240: 0.0000
+sp2OP of atom: 240: 0.9431
+
+Neighbor list of atom 241: 196 249 284 
+sp3OP of atom: 241: 0.0018
+sp2OP of atom: 241: 0.9041
+
+Neighbor list of atom 242: 199 253 287 
+sp3OP of atom: 242: 0.0000
+sp2OP of atom: 242: 0.8961
+
+Neighbor list of atom 243: 202 244 256 
+sp3OP of atom: 243: 0.0000
+sp2OP of atom: 243: 0.8948
+
+Neighbor list of atom 244: 0 243 279 
+sp3OP of atom: 244: 0.0000
+sp2OP of atom: 244: 0.9732
+
+Neighbor list of atom 245: 2 240 246 
+sp3OP of atom: 245: 0.0000
+sp2OP of atom: 245: 0.8771
+
+Neighbor list of atom 246: 203 245 257 
+sp3OP of atom: 246: 0.0012
+sp2OP of atom: 246: 0.5962
+
+Neighbor list of atom 247: 206 248 260 
+sp3OP of atom: 247: 0.0002
+sp2OP of atom: 247: 0.6676
+
+Neighbor list of atom 248: 3 247 282 
+sp3OP of atom: 248: 0.0001
+sp2OP of atom: 248: 0.5893
+
+Neighbor list of atom 249: 5 241 250 
+sp3OP of atom: 249: 0.0011
+sp2OP of atom: 249: 0.9639
+
+Neighbor list of atom 250: 207 249 261 
+sp3OP of atom: 250: 0.0006
+sp2OP of atom: 250: 0.9105
+
+Neighbor list of atom 251: 210 252 264 
+sp3OP of atom: 251: 0.0000
+sp2OP of atom: 251: 0.9875
+
+Neighbor list of atom 252: 6 251 285 
+sp3OP of atom: 252: 0.0001
+sp2OP of atom: 252: 0.8873
+
+Neighbor list of atom 253: 8 242 254 
+sp3OP of atom: 253: 0.0001
+sp2OP of atom: 253: 0.8805
+
+Neighbor list of atom 254: 211 253 265 
+sp3OP of atom: 254: 0.0000
+sp2OP of atom: 254: 0.9506
+
+Neighbor list of atom 255: 214 256 268 
+sp3OP of atom: 255: 0.0003
+sp2OP of atom: 255: 0.8336
+
+Neighbor list of atom 256: 9 243 255 
+sp3OP of atom: 256: 0.0001
+sp2OP of atom: 256: 0.9948
+
+Neighbor list of atom 257: 12 246 258 
+sp3OP of atom: 257: 0.0005
+sp2OP of atom: 257: 0.8950
+
+Neighbor list of atom 258: 215 257 269 
+sp3OP of atom: 258: 0.0000
+sp2OP of atom: 258: 0.9886
+
+Neighbor list of atom 259: 218 260 272 
+sp3OP of atom: 259: 0.0001
+sp2OP of atom: 259: 0.9423
+
+Neighbor list of atom 260: 13 247 259 
+sp3OP of atom: 260: 0.0000
+sp2OP of atom: 260: 0.8736
+
+Neighbor list of atom 261: 16 250 262 
+sp3OP of atom: 261: 0.0000
+sp2OP of atom: 261: 0.5953
+
+Neighbor list of atom 262: 219 261 273 
+sp3OP of atom: 262: 0.0009
+sp2OP of atom: 262: 0.9561
+
+Neighbor list of atom 263: 222 264 276 
+sp3OP of atom: 263: 0.0001
+sp2OP of atom: 263: 0.9965
+
+Neighbor list of atom 264: 17 251 263 
+sp3OP of atom: 264: 0.0000
+sp2OP of atom: 264: 0.9877
+
+Neighbor list of atom 265: 20 254 266 
+sp3OP of atom: 265: 0.0000
+sp2OP of atom: 265: 0.9713
+
+Neighbor list of atom 266: 223 265 277 
+sp3OP of atom: 266: 0.0000
+sp2OP of atom: 266: 0.8796
+
+Neighbor list of atom 267: 226 268 280 
+sp3OP of atom: 267: 0.0010
+sp2OP of atom: 267: 0.6602
+
+Neighbor list of atom 268: 21 255 267 
+sp3OP of atom: 268: 0.0003
+sp2OP of atom: 268: 0.8348
+
+Neighbor list of atom 269: 24 258 270 
+sp3OP of atom: 269: 0.0000
+sp2OP of atom: 269: 0.8690
+
+Neighbor list of atom 270: 227 269 281 
+sp3OP of atom: 270: 0.0000
+sp2OP of atom: 270: 0.9314
+
+Neighbor list of atom 271: 230 272 283 
+sp3OP of atom: 271: 0.0002
+sp2OP of atom: 271: 0.9761
+
+Neighbor list of atom 272: 25 259 271 
+sp3OP of atom: 272: 0.0000
+sp2OP of atom: 272: 0.9346
+
+Neighbor list of atom 273: 28 262 274 
+sp3OP of atom: 273: 0.0011
+sp2OP of atom: 273: 0.6597
+
+Neighbor list of atom 274: 231 273 284 
+sp3OP of atom: 274: 0.0000
+sp2OP of atom: 274: 0.7575
+
+Neighbor list of atom 275: 234 276 286 
+sp3OP of atom: 275: 0.0002
+sp2OP of atom: 275: 0.9679
+
+Neighbor list of atom 276: 29 263 275 
+sp3OP of atom: 276: 0.0000
+sp2OP of atom: 276: 0.9939
+
+Neighbor list of atom 277: 32 266 278 
+sp3OP of atom: 277: 0.0000
+sp2OP of atom: 277: 0.7529
+
+Neighbor list of atom 278: 235 277 287 
+sp3OP of atom: 278: 0.0002
+sp2OP of atom: 278: 0.8914
+
+Neighbor list of atom 279: 237 244 280 
+sp3OP of atom: 279: 0.0001
+sp2OP of atom: 279: 0.8618
+
+Neighbor list of atom 280: 33 267 279 
+sp3OP of atom: 280: 0.0010
+sp2OP of atom: 280: 0.6501
+
+Neighbor list of atom 281: 36 240 270 
+sp3OP of atom: 281: 0.0021
+sp2OP of atom: 281: 0.8374
+
+Neighbor list of atom 282: 238 248 283 
+sp3OP of atom: 282: 0.0000
+sp2OP of atom: 282: 0.7873
+
+Neighbor list of atom 283: 37 271 282 
+sp3OP of atom: 283: 0.0000
+sp2OP of atom: 283: 0.9978
+
+Neighbor list of atom 284: 40 241 274 
+sp3OP of atom: 284: 0.0002
+sp2OP of atom: 284: 0.7885
+
+Neighbor list of atom 285: 239 252 286 
+sp3OP of atom: 285: 0.0001
+sp2OP of atom: 285: 0.8039
+
+Neighbor list of atom 286: 41 275 285 
+sp3OP of atom: 286: 0.0000
+sp2OP of atom: 286: 0.8376
+
+Neighbor list of atom 287: 44 242 278 
+sp3OP of atom: 287: 0.0002
+sp2OP of atom: 287: 0.9771
+

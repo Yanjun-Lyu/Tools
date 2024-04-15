@@ -1,0 +1,314 @@
+# Read from trajectory file: traj_30GPa_5500K_last_100_steps.lammpstrj
+
+# Binning in x direction
+
+# Reading timestep: 247900
+# Number of atoms: 4849
+# Box dimensions: 65.3947 21.5417 21.5177
+
+# Reading timestep: 247950
+# Box dimensions: 65.3993 21.5454 21.5212
+
+# Reading timestep: 248000
+# Box dimensions: 65.404 21.5492 21.5247
+
+# Reading timestep: 248050
+# Box dimensions: 65.4091 21.553 21.5281
+
+# Reading timestep: 248100
+# Box dimensions: 65.414 21.5567 21.5313
+
+# Reading timestep: 248150
+# Box dimensions: 65.4186 21.5603 21.5342
+
+# Reading timestep: 248200
+# Box dimensions: 65.4224 21.564 21.5367
+
+# Reading timestep: 248250
+# Box dimensions: 65.4254 21.5673 21.539
+
+# Reading timestep: 248300
+# Box dimensions: 65.4277 21.5703 21.5408
+
+# Reading timestep: 248350
+# Box dimensions: 65.429 21.573 21.5424
+
+# Reading timestep: 248400
+# Box dimensions: 65.43 21.5754 21.5436
+
+# Reading timestep: 248450
+# Box dimensions: 65.4311 21.5774 21.5448
+
+# Reading timestep: 248500
+# Box dimensions: 65.4319 21.5792 21.5457
+
+# Reading timestep: 248550
+# Box dimensions: 65.4326 21.5808 21.5463
+
+# Reading timestep: 248600
+# Box dimensions: 65.4334 21.582 21.5467
+
+# Reading timestep: 248650
+# Box dimensions: 65.4343 21.5831 21.5469
+
+# Reading timestep: 248700
+# Box dimensions: 65.4348 21.5838 21.547
+
+# Reading timestep: 248750
+# Box dimensions: 65.4346 21.5841 21.5469
+
+# Reading timestep: 248800
+# Box dimensions: 65.4335 21.584 21.5468
+
+# Reading timestep: 248850
+# Box dimensions: 65.4315 21.5838 21.5465
+
+# Reading timestep: 248900
+# Box dimensions: 65.4286 21.5835 21.546
+
+# Reading timestep: 248950
+# Box dimensions: 65.4248 21.5831 21.5453
+
+# Reading timestep: 249000
+# Box dimensions: 65.4197 21.5824 21.5445
+
+# Reading timestep: 249050
+# Box dimensions: 65.4127 21.5814 21.5434
+
+# Reading timestep: 249100
+# Box dimensions: 65.4041 21.5801 21.5419
+
+# Reading timestep: 249150
+# Box dimensions: 65.3941 21.5783 21.5401
+
+# Reading timestep: 249200
+# Box dimensions: 65.3826 21.5763 21.5383
+
+# Reading timestep: 249250
+# Box dimensions: 65.3699 21.5742 21.5365
+
+# Reading timestep: 249300
+# Box dimensions: 65.3557 21.5717 21.5345
+
+# Reading timestep: 249350
+# Box dimensions: 65.3399 21.569 21.5323
+
+# Reading timestep: 249400
+# Box dimensions: 65.323 21.5661 21.5301
+
+# Reading timestep: 249450
+# Box dimensions: 65.3057 21.5629 21.5277
+
+# Reading timestep: 249500
+# Box dimensions: 65.2878 21.5594 21.5253
+
+# Reading timestep: 249550
+# Box dimensions: 65.2693 21.5557 21.5229
+
+# Reading timestep: 249600
+# Box dimensions: 65.2499 21.5521 21.5205
+
+# Reading timestep: 249650
+# Box dimensions: 65.2298 21.5487 21.5184
+
+# Reading timestep: 249700
+# Box dimensions: 65.2098 21.5455 21.5165
+
+# Reading timestep: 249750
+# Box dimensions: 65.1897 21.5425 21.5147
+
+# Reading timestep: 249800
+# Box dimensions: 65.1694 21.5396 21.5133
+
+# Reading timestep: 249850
+# Box dimensions: 65.1493 21.537 21.5122
+
+# Reading timestep: 249900
+# Box dimensions: 65.1292 21.5344 21.5114
+
+# Reading timestep: 249950
+# Box dimensions: 65.1087 21.5319 21.5107
+
+# Reading timestep: 250000
+# Box dimensions: 65.088 21.5296 21.5103
+
+# Reading timestep: 250050
+# Box dimensions: 65.0676 21.5276 21.5103
+
+# Reading timestep: 250100
+# Box dimensions: 65.0479 21.5258 21.5107
+
+# Reading timestep: 250150
+# Box dimensions: 65.0288 21.5245 21.5114
+
+# Reading timestep: 250200
+# Box dimensions: 65.0102 21.5235 21.5123
+
+# Reading timestep: 250250
+# Box dimensions: 64.9927 21.5227 21.5135
+
+# Reading timestep: 250300
+# Box dimensions: 64.976 21.5221 21.515
+
+# Reading timestep: 250350
+# Box dimensions: 64.9598 21.5219 21.517
+
+# Reading timestep: 250400
+# Box dimensions: 64.9446 21.5222 21.5193
+
+# Reading timestep: 250450
+# Box dimensions: 64.9311 21.5229 21.5221
+
+# Reading timestep: 250500
+# Box dimensions: 64.9193 21.524 21.5252
+
+# Reading timestep: 250550
+# Box dimensions: 64.9093 21.5257 21.5288
+
+# Reading timestep: 250600
+# Box dimensions: 64.9019 21.5277 21.5329
+
+# Reading timestep: 250650
+# Box dimensions: 64.8968 21.5302 21.5374
+
+# Reading timestep: 250700
+# Box dimensions: 64.8931 21.5331 21.5424
+
+# Reading timestep: 250750
+# Box dimensions: 64.8903 21.5364 21.5479
+
+# Reading timestep: 250800
+# Box dimensions: 64.8888 21.5402 21.5539
+
+# Reading timestep: 250850
+# Box dimensions: 64.8889 21.5447 21.5603
+
+# Reading timestep: 250900
+# Box dimensions: 64.8904 21.5497 21.5673
+
+# Reading timestep: 250950
+# Box dimensions: 64.8929 21.5551 21.5746
+
+# Reading timestep: 251000
+# Box dimensions: 64.8963 21.5607 21.5824
+
+# Reading timestep: 251050
+# Box dimensions: 64.9002 21.5665 21.5906
+
+# Reading timestep: 251100
+# Box dimensions: 64.9049 21.5723 21.5989
+
+# Reading timestep: 251150
+# Box dimensions: 64.9097 21.5778 21.6071
+
+# Reading timestep: 251200
+# Box dimensions: 64.9145 21.5832 21.6152
+
+# Reading timestep: 251250
+# Box dimensions: 64.9192 21.5886 21.623
+
+# Reading timestep: 251300
+# Box dimensions: 64.9233 21.594 21.6305
+
+# Reading timestep: 251350
+# Box dimensions: 64.9272 21.5991 21.6376
+
+# Reading timestep: 251400
+# Box dimensions: 64.9302 21.604 21.6441
+
+# Reading timestep: 251450
+# Box dimensions: 64.9319 21.6085 21.6501
+
+# Reading timestep: 251500
+# Box dimensions: 64.9328 21.6125 21.6554
+
+# Reading timestep: 251550
+# Box dimensions: 64.9332 21.6162 21.66
+
+# Reading timestep: 251600
+# Box dimensions: 64.9331 21.6197 21.6641
+
+# Reading timestep: 251650
+# Box dimensions: 64.9325 21.6228 21.6676
+
+# Reading timestep: 251700
+# Box dimensions: 64.9306 21.6257 21.6704
+
+# Reading timestep: 251750
+# Box dimensions: 64.927 21.6282 21.6724
+
+# Reading timestep: 251800
+# Box dimensions: 64.9217 21.6302 21.6735
+
+# Reading timestep: 251850
+# Box dimensions: 64.9152 21.6319 21.6739
+
+# Reading timestep: 251900
+# Box dimensions: 64.9081 21.6332 21.6737
+
+# Reading timestep: 251950
+# Box dimensions: 64.9003 21.6342 21.6732
+
+# Reading timestep: 252000
+# Box dimensions: 64.892 21.6348 21.6724
+
+# Reading timestep: 252050
+# Box dimensions: 64.8831 21.635 21.6711
+
+# Reading timestep: 252100
+# Box dimensions: 64.8732 21.6349 21.6694
+
+# Reading timestep: 252150
+# Box dimensions: 64.8626 21.6345 21.6671
+
+# Reading timestep: 252200
+# Box dimensions: 64.8519 21.6337 21.6644
+
+# Reading timestep: 252250
+# Box dimensions: 64.8414 21.6326 21.6614
+
+# Reading timestep: 252300
+# Box dimensions: 64.8314 21.6311 21.6581
+
+# Reading timestep: 252350
+# Box dimensions: 64.8219 21.6293 21.6549
+
+# Reading timestep: 252400
+# Box dimensions: 64.8129 21.6273 21.6514
+
+# Reading timestep: 252450
+# Box dimensions: 64.8045 21.6249 21.6476
+
+# Reading timestep: 252500
+# Box dimensions: 64.7967 21.622 21.6437
+
+# Reading timestep: 252550
+# Box dimensions: 64.7897 21.619 21.6396
+
+# Reading timestep: 252600
+# Box dimensions: 64.7834 21.6158 21.6354
+
+# Reading timestep: 252650
+# Box dimensions: 64.7779 21.6124 21.6312
+
+# Reading timestep: 252700
+# Box dimensions: 64.7734 21.6091 21.627
+
+# Reading timestep: 252750
+# Box dimensions: 64.7701 21.6058 21.623
+
+# Reading timestep: 252800
+# Box dimensions: 64.7677 21.6025 21.6192
+
+# Reading timestep: 252850
+# Box dimensions: 64.7663 21.5993 21.6153
+
+# End of trajectory file detected
+
+# 100 frames are read
+
+# Wrapped trajectory written to: wrapped_traj_30GPa_5500K_last_100_steps.lammpstrj
+
+# Coordination number profile written to coord_num_profile_traj_30GPa_5500K_last_100_steps.lammpstrj.dat
+
+# Mass density profile written to density_profile_traj_30GPa_5500K_last_100_steps.lammpstrj.dat

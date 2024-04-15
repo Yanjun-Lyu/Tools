@@ -1,0 +1,13 @@
+# Read from trajectory file: traj_sp3.lammpstrj
+# Reading timestep: 0
+# Number of atoms: 4
+# Box dimensions: 20 20 20
+
+Neighbor list of atom: 0: 1 2 3 
+sp3OP of atom: 0: 0.607192
+Neighbor list of atom: 1: 0 
+sp3OP of atom: 1: 0
+Neighbor list of atom: 2: 0 
+sp3OP of atom: 2: 0
+Neighbor list of atom: 3: 0 
+sp3OP of atom: 3: 0

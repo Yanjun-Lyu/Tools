@@ -1,0 +1,14 @@
+ITEM: TIMESTEP
+0
+ITEM: NUMBER OF ATOMS
+4
+ITEM: BOX BOUNDS pp pp pp
+0.0 2.0
+0.0 2.0
+0.0 2.0
+ITEM: ATOMS id type element xu yu zu
+1 1 C  1.0            1.0  1.0
+2 1 C  1.0            0.0  1.0
+2 1 C  1.8660254038   1.5  1.0
+3 1 C  0.1339745962   1.5  1.0
+

@@ -1,0 +1,23 @@
+# Read from trajectory file: graphite_288.lammpstrj
+# Input parameters:
+# neighlist cutoff:  1.7000
+# sp3OP del_theta:   12.0000
+# sp2OP del_theta:   12.0000
+# Bin width:         1.0000
+# Binning direction: 1
+
+# Binning in x direction
+
+# Reading timestep: 0
+# Number of atoms: 288
+# Box dimensions: 12.5310 9.5891 19.7071
+# number of bins: 12
+# Timestep: 0
+# Lower bounds: 0.0000 0.0000 0.0000
+# Upper bounds: 12.5310 9.5891 19.7071
+
+# End of trajectory file detected
+
+# 1 frames are read and processed
+
+# Order parameter profiles are written to OP_profile_graphite_288.lammpstrj.dat
