@@ -66,6 +66,11 @@ double dot(const xyz& vec1, const xyz& vec2);
 // Cross product
 xyz cross(const xyz& vec1, const xyz& vec2);
 
+// Average
+double mean(const vector<double>& data);
+
+// Standard deviation
+double stddev(const vector<double>& data);
 
 
 #endif

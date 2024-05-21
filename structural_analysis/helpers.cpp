@@ -5,6 +5,10 @@
 #include <string>
 #include <sstream>
 #include <cmath>
+#include <numeric>
+
+#include <algorithm>
+#include <limits>
 
 #include "helpers.hpp"
 
@@ -164,3 +168,88 @@ xyz cross(const xyz& vec1, const xyz& vec2)
     return result;
 }
 
+// Calculate mean value
+double mean(const vector<double>& data)
+{
+    if (data.empty())
+    {
+        return 0.0; 
+    }
+
+    double sum = accumulate(data.begin(), data.end(), 0.0);
+    return sum / data.size();
+}
+
+// Calculate standard deviation
+double stddev(const vector<double>& data)
+{
+    if (data.size() < 2)
+    {
+        return 0.0;
+    }
+
+    double meanValue = mean(data);
+
+    double sumSquaredDiff = 0.0;
+    for (double value : data)
+    {
+        double diff = value - meanValue;
+        sumSquaredDiff += diff * diff;
+    }
+
+    double variance = sumSquaredDiff / (data.size() - 1);
+
+    return std::sqrt(variance);
+}
+
+// // Calculate mean value without considering "nan"
+// double mean(const vector<double>& data)
+// {
+//     if (data.empty())
+//     {
+//         return 0.0; 
+//     }
+
+//     vector<double> filteredData;
+//     copy_if(data.begin(), data.end(), back_inserter(filteredData),
+//             [](double value) { return !isnan(value); });
+
+//     if (filteredData.empty())
+//     {
+//         return 0.0;
+//     }
+
+//     double sum = accumulate(filteredData.begin(), filteredData.end(), 0.0);
+//     return sum / filteredData.size();
+// }
+
+// // Calculate standard deviation without considering "nan"
+// double stddev(const vector<double>& data)
+// {
+//     if (data.size() < 2)
+//     {
+//         return 0.0;
+//     }
+
+//     vector<double> filteredData;
+//     copy_if(data.begin(), data.end(), back_inserter(filteredData),
+//             [](double value) { return !isnan(value); });
+
+//     if (filteredData.size() < 2)
+//     {
+//         return 0.0;
+//     }
+
+//     double meanValue = mean(filteredData);
+
+//     double sumSquaredDiff = 0.0;
+//     for (double value : filteredData)
+//     {
+//         double diff = value - meanValue;
+//         sumSquaredDiff += diff * diff;
+//     }
+
+//     double variance = sumSquaredDiff / (filteredData.size() - 1);
+
+//     return sqrt(variance);
+// }

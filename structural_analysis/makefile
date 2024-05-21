@@ -1,6 +1,6 @@
 # Default build all
 .PHONY: all
-all: den_profile coord_num_profile avg_density sp3OP OP test coord_num_profile_avg
+all: den_profile coord_num_profile avg_density sp3OP OP test coord_num_profile_avg structural_analysis
 
 # Compiler
 CC = g++
@@ -9,7 +9,7 @@ CFLAGS = -std=c++17 -O3 -g
 
 # Source files
 COMMON_SRCS = trajectory.cpp helpers.cpp 
-SPECIAL_SRCS = coord_num_profile.cpp den_profile.cpp avg_density.cpp sp3OP.cpp OP.cpp test.cpp coord_num_profile_avg.cpp
+SPECIAL_SRCS = coord_num_profile.cpp den_profile.cpp avg_density.cpp sp3OP.cpp OP.cpp test.cpp coord_num_profile_avg.cpp structural_analysis.cpp
 
 # Object files (specify file names from source files with pattern substitution)
 COMMON_OBJS = $(COMMON_SRCS:.cpp=.o)
@@ -17,7 +17,6 @@ SPECIAL_OBJS = $(SPECIAL_SRCS:.cpp=.o)
 
 # Header files
 COMMON_HEADERS = helpers.hpp trajectory.hpp
-
 
 
 # Compile COMMON_SRCS files to COMMON_OBJS files without linking
@@ -50,6 +49,9 @@ test.o: test.cpp $(COMMON_HEADERS)
 coord_num_profile_avg.o: coord_num_profile_avg.cpp $(COMMON_HEADERS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
+structural_analysis.o: structural_analysis.cpp $(COMMON_HEADERS)
+	$(CC) $(CFLAGS) -c $< -o $@
+
 
 # Build executables (linking)
 coord_num_profile: coord_num_profile.o $(COMMON_OBJS)
@@ -73,6 +75,9 @@ test: test.o $(COMMON_OBJS)
 coord_num_profile_avg: coord_num_profile_avg.o $(COMMON_OBJS)
 	$(CC) $(CFLAGS) $^ -o $@
 
+structural_analysis: structural_analysis.o $(COMMON_OBJS)
+	$(CC) $(CFLAGS) $^ -o $@
+
 # Clean rule
 clean:
-	rm -f $(COMMON_OBJS) $(SPECIAL_OBJS) den_profile coord_num_profile avg_density sp3OP OP test coord_num_profile_avg
+	rm -f $(COMMON_OBJS) $(SPECIAL_OBJS) den_profile coord_num_profile avg_density sp3OP OP test coord_num_profile_avg structural_analysis

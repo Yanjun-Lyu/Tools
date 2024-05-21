@@ -51,6 +51,11 @@ int main(int argc, char* argv[])
   //for debugging
   //vector<vector<int>> atomsInBin;  // Which atoms are in each bin
 
+  vector<double> centerXCoords;  // Average x coordinate of each bin index in one frame
+  vector<double> avgCenterXCoords;    // Average x coordinate of each bin index in all frames
+  vector<double> sp2OPBinAllFrame;   // total sp2OP of atoms in the bin in all frames
+  vector<double> sp3OPBinAllFrame;   // total sp3OP of atoms in the bin in all frames
+
 
   cout << "# Input parameters:" << endl;
   cout << fixed << setprecision(4) << "# neighlist cutoff:  " << cutoff << endl; 
@@ -68,6 +73,13 @@ int main(int argc, char* argv[])
   string rm = "rm -f " + OP_PROFILE; 
   system(rm.c_str());
   ofstream OPProfile(OP_PROFILE, ios::app);
+
+  // For writing coordination number profile average into a file
+  const string OP_AVG = "OP_avg_" + TRAJ_FILE + ".dat";
+  rm = "rm -f " + OP_AVG;
+  system(rm.c_str());
+  ofstream OPProfileAvg(OP_AVG, ios::app);
+
 
   ////////////////////////////////////////////////////////////
   // Reading trajectory file
@@ -96,20 +108,19 @@ int main(int argc, char* argv[])
           natomsBin.resize(nbins, 0);
           sp2OPBin.resize(nbins, 0.0);
           sp3OPBin.resize(nbins, 0.0);
+          centerXCoords.resize(nbins, 0.0);
+          avgCenterXCoords.resize(nbins, 0.0);
+          sp2OPBinAllFrame.resize(nbins, 0.0);
+          sp3OPBinAllFrame.resize(nbins, 0.0);
 
-          // for debugging
-          //atomsInBin.clear();
-          //atomsInBin.resize(nbins);
-          
-          
           calledBefore = true;
         }
 
         // Wrap coordinates
         traj.pbc_wrap(); 
-        cout << "# Timestep: " << traj.tstep << endl;
-        cout << "# Lower bounds: " << traj.bounds[0].x << " " << traj.bounds[0].y << " " << traj.bounds[0].z << endl;
-        cout << "# Upper bounds: " << traj.bounds[1].x << " " << traj.bounds[1].y << " " << traj.bounds[1].z << endl;
+        // cout << "# Timestep: " << traj.tstep << endl;
+        // cout << "# Lower bounds: " << traj.bounds[0].x << " " << traj.bounds[0].y << " " << traj.bounds[0].z << endl;
+        // cout << "# Upper bounds: " << traj.bounds[1].x << " " << traj.bounds[1].y << " " << traj.bounds[1].z << endl;
 
 
         // Get neighbor list of each atom in the frame 
@@ -131,30 +142,27 @@ int main(int argc, char* argv[])
           natomsBin[binIndex]++;
           sp2OPBin[binIndex] += traj.sp2OP[i];
           sp3OPBin[binIndex] += traj.sp3OP[i];
-          
-
-          //cout << "Atom " << i << " is in Bin " << binIndex << endl;
-          // for debugging
-          // atomsInBin[binIndex].push_back(i);
-          // cout << "BP1" << endl;
         }
 
+
         // Calculate average order parameters in each bin
+        // Calculate center X coordinate number of each bin in the frame
+        // Populate coordNumBinAllFrame and avgCenterXCoords for all frames
         for (size_t i = 0; i < nbins; i++)
         {
           sp2OPBin[i] /= natomsBin[i];
           sp3OPBin[i] /= natomsBin[i];
 
-          // // for debugging
-          // cout << "Atoms in bin " << i << ": ";
-          // cout << "BP2" << endl;
-          // for (size_t j = 0; j < atomsInBin[i].size(); j++)
-          // {
-          //   cout << "BP3" << endl;
-          //   cout << atomsInBin[i][j] << " ";
-          //   cout << "BP4" << endl;
-          // }
-          // cout << endl;
+          centerXCoords[i] = traj.bounds[0].x + (i + 0.5) * binWidth;
+					if (i == nbins - 1)
+					{
+					  centerXCoords[i] = (traj.boxdims.x - i * binWidth) * 0.5 + i * binWidth + traj.bounds[0].x;
+					}
+          
+          sp2OPBinAllFrame[i] += sp2OPBin[i];
+          sp3OPBinAllFrame[i] += sp3OPBin[i];
+          avgCenterXCoords[i] += centerXCoords[i]; 
+
         }
         
         // output order parameters profile into dat file
@@ -162,16 +170,7 @@ int main(int argc, char* argv[])
         OPProfile << "# center_x_coord  avg_sp3OP avg_sp2OP" << endl; 
         for (size_t i = 0; i < nbins; i++) 
         {
-					if (i < nbins - 1)
-          {
-					  OPProfile << fixed << setprecision(4) << traj.bounds[0].x + (i + 0.5) * binWidth << "  " << sp3OPBin[i] << " " << sp2OPBin[i] << endl;
-					}
-					
-					else
-					{
-					  OPProfile << fixed << setprecision(4) << (traj.boxdims.x - i * binWidth) * 0.5 + i * binWidth + traj.bounds[0].x << "  " << sp3OPBin[i] << " " << sp2OPBin[i] << endl;
-					}
-					
+				  OPProfile << fixed << setprecision(4) << centerXCoords[i] << "  " << sp3OPBin[i] << " " << sp2OPBin[i] << endl;
         }
 
         nframes++;
@@ -197,15 +196,19 @@ int main(int argc, char* argv[])
           natomsBin.resize(nbins,0);
           sp2OPBin.resize(nbins, 0.0);
           sp3OPBin.resize(nbins, 0.0);
+          centerXCoords.resize(nbins, 0.0);
+          avgCenterXCoords.resize(nbins, 0.0);
+          sp2OPBinAllFrame.resize(nbins, 0.0);
+          sp3OPBinAllFrame.resize(nbins, 0.0);
           
           calledBefore = true;
         }
 
         // Wrap coordinates
         traj.pbc_wrap();
-        cout << "# Timestep: " << traj.tstep << endl;
-        cout << "# Lower bounds: " << traj.bounds[0].x << " " << traj.bounds[0].y << " " << traj.bounds[0].z << endl;
-        cout << "# Upper bounds: " << traj.bounds[1].x << " " << traj.bounds[1].y << " " << traj.bounds[1].z << endl;
+        // cout << "# Timestep: " << traj.tstep << endl;
+        // cout << "# Lower bounds: " << traj.bounds[0].x << " " << traj.bounds[0].y << " " << traj.bounds[0].z << endl;
+        // cout << "# Upper bounds: " << traj.bounds[1].x << " " << traj.bounds[1].y << " " << traj.bounds[1].z << endl;
 
         // Get neighbor list of each atom in the frame 
         traj.get_neighlist(cutoff);
@@ -229,28 +232,31 @@ int main(int argc, char* argv[])
         }
 
         // Calculate average order parameters in each bin
+        // Calculate center Z coordinate number of each bin in the frame
+        // Populate coordNumBinAllFrame and avgCenterXCoords for all frames
         for (size_t i = 0; i < nbins; i++)
         {
           sp2OPBin[i] /= natomsBin[i];
           sp3OPBin[i] /= natomsBin[i];
+
+          centerXCoords[i] = traj.bounds[0].z + (i + 0.5) * binWidth;
+					if (i == nbins - 1)
+					{
+					  centerXCoords[i] = (traj.boxdims.z - i * binWidth) * 0.5 + i * binWidth + traj.bounds[0].z;
+					}
+          
+          sp2OPBinAllFrame[i] += sp2OPBin[i];
+          sp3OPBinAllFrame[i] += sp3OPBin[i];
+          avgCenterXCoords[i] += centerXCoords[i]; 
+
         }
         
         // output order parameters profile into dat file
         OPProfile << "# timestep: " << traj.tstep << endl; 
-        OPProfile << "# center_z_coord  avg_sp3OP avg_sp3OP" << endl; 
+        OPProfile << "# center_z_coord  avg_sp3OP avg_sp2OP" << endl; 
         for (size_t i = 0; i < nbins; i++)
         {
-				
-					if (i < nbins - 1)
-          {
-					  OPProfile << fixed << setprecision(4) << traj.bounds[0].z + (i + 0.5) * binWidth << "  " << sp3OPBin[i] << " " << sp2OPBin[i] << endl;
-					}
-					
-					else
-					{
-					  OPProfile << fixed << setprecision(4) << (traj.boxdims.z - i * binWidth) * 0.5 + i * binWidth + traj.bounds[0].z << "  " << sp3OPBin[i] << " " << sp2OPBin[i] << endl;
-					}
-					
+				  OPProfile << fixed << setprecision(4) << centerXCoords[i] << "  " << sp3OPBin[i] << " " << sp2OPBin[i] << endl;				
         }
 
         nframes++;
@@ -259,7 +265,23 @@ int main(int argc, char* argv[])
       }
       break;
   }
-  
+
+  // Calculate average coordination number and center x coordinates among all frames
+  for (size_t i = 0; i < nbins; i++)
+  {
+    sp2OPBinAllFrame[i] /= nframes;
+    sp3OPBinAllFrame[i] /= nframes;
+    avgCenterXCoords[i] /= nframes; 
+  }
+
+  // Output average coordination number profile into dat file
+  OPProfileAvg << "# number of timesteps averaged: " << nframes << endl; 
+  OPProfileAvg << "# avg_center_coord  avg_sp3OP_all_frames avg_sp2OP_all_frames" << endl; 
+  for (size_t i = 0; i < nbins; i++)
+  {
+    OPProfileAvg << fixed << setprecision(4) << avgCenterXCoords[i] << "  " << sp3OPBinAllFrame[i] << " " << sp2OPBinAllFrame[i] << endl;
+  }
+ 
   cout << endl;
   cout << "# " << nframes  << " frames are read and processed" << endl;
   cout << endl;
@@ -268,5 +290,7 @@ int main(int argc, char* argv[])
   OPProfile.close();
   cout << "# Order parameter profiles are written to " << OP_PROFILE << endl;
   
+  OPProfileAvg.close();
+  cout << "# Average order parameter profile written to " << OP_AVG << endl;
   return 0;
 }

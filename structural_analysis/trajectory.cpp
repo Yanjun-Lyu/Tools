@@ -39,7 +39,7 @@ bool Trajectory::read_frame()
 
     // Read current timestep
     tstep = stoi(get_next_line(trajstream));  
-    cout << "# Reading timestep: " << tstep <<endl;
+    cout << "# Reading timestep: " << tstep << endl;
 
     get_next_line(trajstream);  // ITEM: NUMBER OF ATOMS
     
@@ -73,7 +73,7 @@ bool Trajectory::read_frame()
     boxdims.y = bounds[1].y - bounds[0].y; 
     boxdims.z = bounds[1].z - bounds[0].z; 
 
-    cout << "# Box dimensions: " << boxdims.x << " " << boxdims.y << " " << boxdims.z << endl;
+    // cout << "# Box dimensions: " << boxdims.x << " " << boxdims.y << " " << boxdims.z << endl;
 
     // // Calculate number density
     // numDen = natoms/(boxdims.x)/(boxdims.y)/(boxdims.z);
@@ -641,4 +641,121 @@ void Trajectory::get_sp2OP(double del_theta)
         //cout << "sp2OP of atom " << i << ": " << sp3OP[i] << endl;
     }    
 
+}
+
+
+// Get sp2 and sp3 order parameter of each atom in the frame 
+void Trajectory::get_OP(double sp3_del_theta, double sp2_del_theta) 
+// del_theta is the tolerance angle 
+{
+    sp2OP.clear();
+    sp3OP.clear();
+    sp2OP.resize(natoms, 0.0);
+    sp3OP.resize(natoms, 0.0);
+
+    // Vectors for calculating angles and azimuths
+    xyz ij, ik, il;
+
+    // Variables in sp2OP
+    int nneighbor = 0;            // number of neighboring atoms of atom i of interest (the "N_{ngh}")
+
+    double prefactor = 0.0;       // the prefactor of sp3OP
+
+    double angle_ij_ik = 0.0;     // angle <ij,ik>
+    double angle_ij_il = 0.0;     // angle <ij,il>
+    double azimuth_il_ijik = 0.0; // azimuth <il, p(ij, ik)> (the azimuth of il to the plane determined by ij and ik)
+
+    // Terms in sp2OP
+    double exp_k_2 = 0.0;           // the exponential term including angle <ij,ik>
+    double cossq_exp_l_2 = 0.0;     // the product of the exponential term including angle <ij,il> and cosine square term including azimuth <il, p(ij, ik)>
+
+    // Terms in sp3OP
+    double exp_k_3 = 0.0;           // the exponential term including angle <ij,ik>
+    double cossq_exp_l_3 = 0.0;     // the product of the exponential term including angle <ij,il> and cosine square term including azimuth <il, p(ij, ik)>  
+
+
+    // For atom i, loop over all its neighbors
+    for (size_t i = 0; i < natoms; i++)
+    {
+
+        // number of neighbors of atom i
+        nneighbor = neighlist[i].size();  
+
+        // make sure atom i have enough neighbors (3) for following calculations
+        if (nneighbor < 3)
+        {
+          sp2OP[i] = 0.0;
+          sp3OP[i] = 0.0;
+          continue;
+        }   
+
+        prefactor = 1.0 / nneighbor / (nneighbor - 1.0) / (nneighbor - 2.0);
+
+        // for atom j in atom i's neighbor list
+        for (size_t j = 0; j < nneighbor; j++)
+        {
+            // (re-)initialize accumulated variables in previous loop of atom j
+            exp_k_2 = 0.0;
+            exp_k_3 = 0.0; 
+
+            ij = get_vec(i, neighlist[i][j]);  
+      
+            // for atom k in atom i's neighbor list
+            for (size_t k = 0; k < nneighbor; k++)
+            {
+                if (k == j)
+                {
+                    continue;
+                }
+
+                // (re-)initialize accumulated variables in previous loop of atom k
+                cossq_exp_l_2 = 0.0;
+                cossq_exp_l_3 = 0.0; 
+
+                ik = get_vec(i, neighlist[i][k]); 
+                angle_ij_ik = get_angle(ij, ik); 
+
+                // for atom l in atom i's neighbor list
+                for (size_t l = 0; l < nneighbor; l++)
+                {
+                    
+                    if (l == j || l == k)
+                    {
+                        continue;
+                    }
+
+                    il = get_vec(i, neighlist[i][l]); 
+                    angle_ij_il = get_angle(ij, il); 
+
+                    azimuth_il_ijik = get_azimuth(ij, ik, il);
+                    
+                    // populate cossq_exp_l_2 (inner summation)
+                    cossq_exp_l_2 += pow(cos(M_PI / 180.0 * azimuth_il_ijik), 2) * exp(- pow((angle_ij_il - 120.0), 2) / (2 * pow(sp2_del_theta, 2)));
+
+                    // populate cossq_exp_l_3 (inner summation)
+                    cossq_exp_l_3 += pow(cos(M_PI / 180.0 * 1.5 * azimuth_il_ijik), 2) * exp(- pow((angle_ij_il - 109.47), 2) / (2 * pow(sp3_del_theta, 2)));  
+
+                }
+
+                // populate exp_k_2 (outer summation)
+                exp_k_2 += exp(- pow((angle_ij_ik - 120.0), 2) / (2 * pow(sp2_del_theta, 2))) * cossq_exp_l_2;
+
+                // populate exp_k_3 (outer summation)
+                exp_k_3 += exp(- pow((angle_ij_ik - 109.47), 2) / (2 * pow(sp3_del_theta, 2))) * cossq_exp_l_3;
+
+            }
+
+            // sum up the terms of sp2OP of atom i in each loop of j
+            sp2OP[i] += exp_k_2;
+            
+            // sum up the terms of sp3OP of atom i in each loop of j
+            sp3OP[i] += exp_k_3;
+        }
+
+        // calculate sp2OP of atom i
+        sp2OP[i] *= prefactor;
+
+        // calculate sp3OP of atom i
+        sp3OP[i] *= prefactor;
+    }
 }

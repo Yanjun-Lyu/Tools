@@ -65,8 +65,7 @@ class Trajectory
 
         void get_sp2OP(double del_theta);
 
-
-
+        void get_OP(double sp3_del_theta, double sp2_del_theta) ;
 
 
 
